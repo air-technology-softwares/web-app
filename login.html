@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Air Technology</title>
+	<link rel="icon" href="https://image.airtechnology.in/icon.png"/>
+	<link rel="stylesheet" href="loginStyle.css"/>
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	
+	<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+	<script src="./loginScript.js"></script>
+</head>
+
+<body>
+	<div class="loginPage" id="loginPage">
+	<br>
+	<br>
+	<h1>Login</h1>
+	<input class="formate" placeholder="Email/Username" type="text" required id="email"/>
+	<br>
+	<br>
+	<input class="formate" placeholder="Password" type="password" required id="pass"/>
+	<br>
+	<br>
+	<button class="formate" type="submit" onClick="login()">Login</button>
+	<br>
+	<br>
+	<a onClick="fswitch()">
+	Forgot Your Password?
+	</a>
+	<br>
+	<br>
+	<a onClick="cswitch()">
+	Do not have one? Create One Now
+	</a>
+		</div>
+	
+	<div class="createPage" id="createPage">
+	
+		<br>
+		<br>
+		<h1>Register</h1>
+		<input class="formate" id="name" placeholder="Name" required/>
+		<br>
+		<br>
+		<input class="formate" id="cemail" placeholder="Email" required type="email"/>
+		<br>
+		<br>
+		<input class="formate" id="phone" placeholder="Phone" required type="number"/>
+		<br>
+		<br>
+		<input class="formate" id="cpass" placeholder="set Password" required type="password"/>
+		<br>
+		<br>
+		<input class="formate" id="ccpass" placeholder="Comfirm Password" required type="password"/>
+		<br>
+		<br>
+		<button class="formate" onClick="createUser()">Create</button>
+		<br>
+		<br>
+		<a onClick="cswitch()">
+		Back To SignIn
+		</a>
+		
+	</div>
+	
+	<div class="forgotPage" id="forgotPage">
+		
+		<br>
+		<br>
+		<h1>Forgot Password</h1>
+		<br>
+		<br>
+		<input class="formate" id="femail" placeholder="Email" required type="email"/>
+		<br>
+		<br>
+		<button class="formate" onClick="forgotPassword()">Send Email</button>
+		<br>
+		<br>
+		<a onClick="fswitch()">
+		Back To Login
+		</a>
+	
+	</div>
+	<div class="main" id="main">
+		<h1>Start A Call</h1>
+			
+			<button class="start" id="start" type="button">Start</button>
+			</div>
+		
+		<div class="none" id="none">
+		<h1>Sorry! No Active Plan</h1>
+			<br>
+			<br>
+			<p>You do not have any current plan active to buy an plan kindly go to the plan section from our meet website</p>
+		</div>
+</body>
+	
+</html>

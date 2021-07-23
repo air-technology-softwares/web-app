@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	text-align: center;
+	align-self: center;
+}
+
+button.start
+{
+	text-align: center;
+	background-color: orangered;
+    font-size: 14pt;
+	font-weight: bold;
+	border: none;
+	width: 150px;
+	height: 60px;
+	border-radius: 50px;
+}
+
+button.start:hover
+{
+	cursor: pointer;
+}
+
+div.none
+{
+	display: none;
+}
+
+div.main
+{
+	display: none;
+}
